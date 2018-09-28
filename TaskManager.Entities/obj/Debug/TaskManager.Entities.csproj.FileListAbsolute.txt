@@ -1,0 +1,5 @@
+C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.Entities\bin\Debug\TaskManager.Entities.dll
+C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.Entities\bin\Debug\TaskManager.Entities.pdb
+C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Entities.dll
+C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Entities.pdb
+C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Entities.csproj.CoreCompileInputs.cache
