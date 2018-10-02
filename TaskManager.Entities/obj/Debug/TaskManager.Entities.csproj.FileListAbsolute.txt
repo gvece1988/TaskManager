@@ -3,3 +3,9 @@ C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.Entities\bin\Debug\TaskManager.En
 C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Entities.dll
 C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Entities.pdb
 C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Entities.csproj.CoreCompileInputs.cache
+E:\Project\01.Capsule\TaskManager\TaskManager.Entities\bin\Debug\TaskManager.Entities.dll
+E:\Project\01.Capsule\TaskManager\TaskManager.Entities\bin\Debug\TaskManager.Entities.pdb
+E:\Project\01.Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Entities.csprojResolveAssemblyReference.cache
+E:\Project\01.Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Entities.csproj.CoreCompileInputs.cache
+E:\Project\01.Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Entities.dll
+E:\Project\01.Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Entities.pdb

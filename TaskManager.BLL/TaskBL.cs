@@ -11,9 +11,19 @@ namespace TaskManager.BLL
     {
         private readonly TaskManagerContext context = new TaskManagerContext();
 
-        public List<Task> GetAll()
+        public IEnumerable<Task> GetAll()
         {
-            return context.Tasks.ToList();
+            return context.Tasks.ToArray();
+        }
+
+        public IEnumerable<Task> Search(TaskSearch search)
+        {
+            return context.Tasks.Where(m => (string.IsNullOrEmpty(search.Title) || m.Title == search.Title)
+                    && (search.ParentTaskId == null || m.ParentTaskId == search.ParentTaskId)
+                    && (search.PriorityFrom == null || m.Priority >= search.PriorityFrom)
+                    && (search.PriorityTo == null || m.Priority <= search.PriorityTo)
+                    && (search.StartDate == null || m.StartDate == search.StartDate)
+                    && (search.EndDate == null || m.EndDate == search.EndDate));
         }
 
         public Task GetById(int Id)
@@ -31,11 +41,19 @@ namespace TaskManager.BLL
         {
             var task = context.Tasks.FirstOrDefault(m => m.Id == item.Id);
 
-            task.Name = item.Name;
+            task.Title = item.Title;
             task.ParentTask = item.ParentTask;
             task.Priority = item.Priority;
             task.StartDate = item.StartDate;
             task.EndDate = item.EndDate;
+
+            context.SaveChanges();
+        }
+
+        public void End(int id)
+        {
+            var task = context.Tasks.FirstOrDefault(m => m.Id == id);
+            task.IsEnded = true;
 
             context.SaveChanges();
         }

@@ -13,36 +13,47 @@ namespace TaskManager.API.Controllers
     {
         private readonly TaskBL taskBL = new TaskBL();
 
-        [HttpGet]
-        public IHttpActionResult GetTasks()
+        // GET: api/Task
+        public IEnumerable<Task> Get()
         {
-            return Ok(taskBL.GetAll());
+            return taskBL.GetAll();
         }
 
-        [HttpGet]
-        public IHttpActionResult GetTaskLookups()
+        // GET: api/Task/Search
+        public IEnumerable<Task> Search(TaskSearch search)
         {
-            return Ok(taskBL.GetAll());
+            return taskBL.Search(search);
         }
 
-        [HttpGet]
-        public IHttpActionResult GetTaskById(int taskId)
+        // GET: api/Task/5
+        public IHttpActionResult Get(int id)
         {
-            return Ok(taskBL.GetById(taskId));
+            var task = taskBL.GetById(id);
+
+            if (task == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(task);
         }
 
-        public IHttpActionResult CreateTask(Task task)
+        // POST: api/Task
+        public void Post([FromBody]Task task)
         {
             taskBL.Add(task);
-
-            return StatusCode(HttpStatusCode.NoContent);
         }
 
-        public IHttpActionResult UpdateTask(Task task)
+        // PUT: api/Task
+        public void Put([FromBody]Task task)
         {
             taskBL.Update(task);
+        }
 
-            return StatusCode(HttpStatusCode.NoContent);
+        // DELETE: api/Task/5
+        public void Delete(int id)
+        {
+            taskBL.End(id);
         }
     }
 }

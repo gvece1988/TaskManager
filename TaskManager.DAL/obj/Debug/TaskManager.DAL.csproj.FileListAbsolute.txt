@@ -12,3 +12,16 @@ C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.DAL\bin\Debug\EntityFramework.Sql
 C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.DAL\bin\Debug\EntityFramework.xml
 C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.DAL\obj\Debug\TaskManager.DAL.csproj.CopyComplete
+E:\Project\01.Capsule\TaskManager\TaskManager.DAL\bin\Debug\TaskManager.DAL.dll
+E:\Project\01.Capsule\TaskManager\TaskManager.DAL\bin\Debug\TaskManager.DAL.pdb
+E:\Project\01.Capsule\TaskManager\TaskManager.DAL\bin\Debug\EntityFramework.dll
+E:\Project\01.Capsule\TaskManager\TaskManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Project\01.Capsule\TaskManager\TaskManager.DAL\bin\Debug\TaskManager.Entities.dll
+E:\Project\01.Capsule\TaskManager\TaskManager.DAL\bin\Debug\TaskManager.Entities.pdb
+E:\Project\01.Capsule\TaskManager\TaskManager.DAL\bin\Debug\EntityFramework.xml
+E:\Project\01.Capsule\TaskManager\TaskManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Project\01.Capsule\TaskManager\TaskManager.DAL\obj\Debug\TaskManager.DAL.csprojResolveAssemblyReference.cache
+E:\Project\01.Capsule\TaskManager\TaskManager.DAL\obj\Debug\TaskManager.DAL.csproj.CoreCompileInputs.cache
+E:\Project\01.Capsule\TaskManager\TaskManager.DAL\obj\Debug\TaskManager.DAL.csproj.CopyComplete
+E:\Project\01.Capsule\TaskManager\TaskManager.DAL\obj\Debug\TaskManager.DAL.dll
+E:\Project\01.Capsule\TaskManager\TaskManager.DAL\obj\Debug\TaskManager.DAL.pdb
