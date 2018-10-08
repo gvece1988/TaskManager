@@ -16,15 +16,5 @@ namespace TaskManager.API
             GlobalConfiguration.Configure(WebApiConfig.Register);
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<TaskManagerContext>());
         }
-
-        //Added code
-        protected void Application_BeginRequest(object sender, EventArgs e)
-        {
-            if (HttpContext.Current.Request.HttpMethod == "OPTIONS")
-            {
-                HttpContext.Current.Response.Flush();
-            }
-        }
-        //end of added code
     }
 }

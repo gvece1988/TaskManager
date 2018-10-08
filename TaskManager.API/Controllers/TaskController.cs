@@ -4,11 +4,13 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using TaskManager.BLL;
 using TaskManager.Entities;
 
 namespace TaskManager.API.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class TaskController : ApiController
     {
         private readonly TaskBL taskBL = new TaskBL();
@@ -19,11 +21,19 @@ namespace TaskManager.API.Controllers
             return taskBL.GetAll();
         }
 
-        // GET: api/Task/Search
-        public IEnumerable<Task> Search(TaskSearch search)
+        // GET: api/Task/GetTaskLookups
+        [Route("api/Task/GetTaskLookups")]
+        public IEnumerable<Lookup> GetTaskLookups()
         {
-            return taskBL.Search(search);
+            return taskBL.GetTaskLookups();
         }
+
+        // GET: api/Task/Search
+        //[HttpGet]
+        //public IEnumerable<Task> Search(TaskSearch search)
+        //{
+        //    return taskBL.Search(search);
+        //}
 
         // GET: api/Task/5
         public IHttpActionResult Get(int id)

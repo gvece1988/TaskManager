@@ -9,3 +9,4 @@ E:\Project\01.Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Ent
 E:\Project\01.Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Entities.csproj.CoreCompileInputs.cache
 E:\Project\01.Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Entities.dll
 E:\Project\01.Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Entities.pdb
+C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.Entities\obj\Debug\TaskManager.Entities.csprojAssemblyReference.cache

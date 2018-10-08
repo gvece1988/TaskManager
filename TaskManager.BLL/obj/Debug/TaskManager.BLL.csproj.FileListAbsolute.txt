@@ -7,7 +7,6 @@ C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.BLL\obj\Debug\TaskManager.BLL.csp
 C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.BLL\bin\Debug\TaskManager.DAL.dll
 C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.BLL\bin\Debug\EntityFramework.dll
 C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.BLL\bin\Debug\TaskManager.DAL.pdb
-C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.BLL\bin\Debug\TaskManager.DAL.dll.config
 C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.BLL\bin\Debug\EntityFramework.xml
 C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.BLL\obj\Debug\TaskManager.BLL.csproj.CopyComplete
 C:\Venkat\IIHT\Capsule\TaskManager\TaskManager.BLL\bin\Debug\TaskManager.BLL.dll.config

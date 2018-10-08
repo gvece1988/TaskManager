@@ -20,7 +20,7 @@ namespace TaskManager.Entities
 
         public DateTime? EndDate { get; set; }
 
-        public bool IsEnded { get; set; }
+        public bool Done { get; set; }
 
         public int? ParentTaskId { get; set; }
 

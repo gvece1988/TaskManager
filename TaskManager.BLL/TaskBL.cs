@@ -16,6 +16,11 @@ namespace TaskManager.BLL
             return context.Tasks.ToArray();
         }
 
+        public IEnumerable<Lookup> GetTaskLookups()
+        {
+            return context.Tasks.Select(m => new Lookup { Id = m.Id, Name = m.Title }).ToArray();
+        }
+
         public IEnumerable<Task> Search(TaskSearch search)
         {
             return context.Tasks.Where(m => (string.IsNullOrEmpty(search.Title) || m.Title == search.Title)
@@ -53,7 +58,7 @@ namespace TaskManager.BLL
         public void End(int id)
         {
             var task = context.Tasks.FirstOrDefault(m => m.Id == id);
-            task.IsEnded = true;
+            task.Done = true;
 
             context.SaveChanges();
         }
