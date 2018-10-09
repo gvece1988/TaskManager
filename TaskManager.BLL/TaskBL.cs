@@ -21,16 +21,6 @@ namespace TaskManager.BLL
             return context.Tasks.Select(m => new Lookup { Id = m.Id, Name = m.Title }).ToArray();
         }
 
-        public IEnumerable<Task> Search(TaskSearch search)
-        {
-            return context.Tasks.Where(m => (string.IsNullOrEmpty(search.Title) || m.Title == search.Title)
-                    && (search.ParentTaskId == null || m.ParentTaskId == search.ParentTaskId)
-                    && (search.PriorityFrom == null || m.Priority >= search.PriorityFrom)
-                    && (search.PriorityTo == null || m.Priority <= search.PriorityTo)
-                    && (search.StartDate == null || m.StartDate == search.StartDate)
-                    && (search.EndDate == null || m.EndDate == search.EndDate));
-        }
-
         public Task GetById(int Id)
         {
             return context.Tasks.FirstOrDefault(m => m.Id == Id);

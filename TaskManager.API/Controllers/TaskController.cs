@@ -28,13 +28,6 @@ namespace TaskManager.API.Controllers
             return taskBL.GetTaskLookups();
         }
 
-        // GET: api/Task/Search
-        //[HttpGet]
-        //public IEnumerable<Task> Search(TaskSearch search)
-        //{
-        //    return taskBL.Search(search);
-        //}
-
         // GET: api/Task/5
         public IHttpActionResult Get(int id)
         {
