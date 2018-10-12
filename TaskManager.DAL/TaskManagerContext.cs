@@ -7,7 +7,7 @@ using TaskManager.Entities;
 
 namespace TaskManager.DAL
 {
-    public class TaskManagerContext : DbContext
+    public class TaskManagerContext : DbContext, ITaskManagerContext
     {
         public DbSet<Task> Tasks { get; set; }
     }

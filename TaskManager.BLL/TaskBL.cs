@@ -1,56 +1,61 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using TaskManager.DAL;
 using TaskManager.Entities;
 
 namespace TaskManager.BLL
 {
-    public class TaskBL
+    public class TaskBL : ITaskBL
     {
-        private readonly TaskManagerContext context = new TaskManagerContext();
+        private readonly ITaskManagerContext _context;
+
+        public TaskBL(ITaskManagerContext context)
+        {
+            _context = context;
+        }
 
         public IEnumerable<Task> GetAll()
         {
-            return context.Tasks.ToArray();
+            return _context.Tasks.OrderByDescending(m => m.Id).ToArray();
         }
 
         public IEnumerable<Lookup> GetTaskLookups()
         {
-            return context.Tasks.Select(m => new Lookup { Id = m.Id, Name = m.Title }).ToArray();
+            return _context.Tasks.Select(m => new Lookup { Id = m.Id, Name = m.Title }).ToArray();
         }
 
         public Task GetById(int Id)
         {
-            return context.Tasks.FirstOrDefault(m => m.Id == Id);
+            return _context.Tasks.FirstOrDefault(m => m.Id == Id);
         }
 
-        public void Add(Task item)
+        public int Add(Task item)
         {
-            context.Tasks.Add(item);
-            context.SaveChanges();
+            _context.Tasks.Add(item);
+            _context.SaveChanges();
+            return item.Id;
         }
 
         public void Update(Task item)
         {
-            var task = context.Tasks.FirstOrDefault(m => m.Id == item.Id);
+            var task = _context.Tasks.FirstOrDefault(m => m.Id == item.Id);
 
             task.Title = item.Title;
             task.ParentTask = item.ParentTask;
             task.Priority = item.Priority;
             task.StartDate = item.StartDate;
             task.EndDate = item.EndDate;
+            task.ParentTaskId = item.ParentTaskId;
 
-            context.SaveChanges();
+            _context.SaveChanges();
         }
 
         public void End(int id)
         {
-            var task = context.Tasks.FirstOrDefault(m => m.Id == id);
+            var task = _context.Tasks.FirstOrDefault(m => m.Id == id);
             task.Done = true;
 
-            context.SaveChanges();
+            _context.SaveChanges();
         }
     }
 }

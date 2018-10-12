@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.API", "TaskMana
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.API.Tests", "TaskManager.API.Tests\TaskManager.API.Tests.csproj", "{A320E80A-67C0-4194-A016-6380C5EC3DDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.BLL.Tests", "TaskManager.BLL.Tests\TaskManager.BLL.Tests.csproj", "{74F14910-ED67-4ED6-90EC-061999010BE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A320E80A-67C0-4194-A016-6380C5EC3DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A320E80A-67C0-4194-A016-6380C5EC3DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A320E80A-67C0-4194-A016-6380C5EC3DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74F14910-ED67-4ED6-90EC-061999010BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74F14910-ED67-4ED6-90EC-061999010BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74F14910-ED67-4ED6-90EC-061999010BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74F14910-ED67-4ED6-90EC-061999010BE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
